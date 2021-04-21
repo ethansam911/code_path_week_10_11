@@ -1,44 +1,47 @@
-Milestone 0: Networking Toolbox
+# Honeypot Assignment
 
+**Time spent:** **X** hours spent in total
 
-*   Challenges
-    *    Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface
-    *    What is your primary interface's IP address? Is it different from your public IP? Why or why not?
-    *    What is the MAC address of your primary interface?
-    *    Identify and understand your loopback interface
+**Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
-    * ping
+### MHN-Admin Deployment (Required)
 
-*   Challenges
-    *    What is the IP address of codepath.com?
-    *    What is the IP address of google.com?
-    *    Why would the IP address of google.com change between runs or from different locations?
+**Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 
+<img src="mhn-admin.gif">
 
-*    Challenges
-    *    Using the IP for codepath.com from the previous, pass it to nslookup
-    *    Does the domain returned from nslookup match? If not, why not?
+### Dionaea Honeypot Deployment (Required)
 
+**Summary:** Briefly in your own words, what does dionaea do?
 
-*   Challenges
-    *    Compare the traceroutes for codepath.com and google.com
-    *    How many of the hops are the same? What accounts for this?
-    *    Which has more hops? What accounts for the difference?
+<img src="dionaea-honeypot.gif">
 
+### Database Backup (Required) 
 
-*    Challenges
-    *    What's one thing that makes telnet insecure?
-    *    Can you telnet to codepath.com? What port is open and why?
+**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
+*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
-*    Challenges
-    *    Identify some differences between the two
-    *    Which would you be more likely to use for interacting with a RESTful API from the command line?
-    *    Which support recursive downloading?
-    *    Which are you more likely to find pre-installed on a Linux OS?
-    *    What is the syntax for each for downloading a file to the current directory?
+### Deploying Additional Honeypot(s) (Optional)
 
+#### X Honeypot
 
-*   Challenges
-    *    What is the syntax for copying a file from a local folder to a remote one?
-    *    Why is key authentication preferred to passwords?
+**Summary:** What does this honeypot simulate and do for a security researcher?
+
+<img src="x-honeypot.gif">
+
+### Malware Capture and Identification (Optional)
+
+#### X Malware
+
+**Summary:** How did you find it? Which honeypot captured it? What does each malware do?
+
+MD5 Hash: *Run `md5sum` on the file and record the hash here.*
+
+SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
+
+<img src="x-malware.gif">
+
+## Notes
+
+Describe any challenges encountered while doing the assignment.
